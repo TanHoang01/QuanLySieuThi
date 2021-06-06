@@ -23,6 +23,7 @@ namespace QuanLySieuThi
             MuaHangPanel.Controls.Clear();
             DataGridView dataGridView = new DataGridView();
             dataGridView.Dock = DockStyle.Fill;
+            dataGridView.BackgroundColor = Color.LemonChiffon;
             MuaHangPanel.Controls.Add(dataGridView);
             dataGridView.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM ReceiptGoods");
         }
@@ -32,6 +33,7 @@ namespace QuanLySieuThi
             MuaHangPanel.Controls.Clear();
             DataGridView dataGridView = new DataGridView();
             dataGridView.Dock = DockStyle.Fill;
+            dataGridView.BackgroundColor = Color.LemonChiffon;
             MuaHangPanel.Controls.Add(dataGridView);
             dataGridView.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM IssueGoods");
         }
@@ -42,6 +44,16 @@ namespace QuanLySieuThi
             this.Hide();
             f.ShowDialog();
             this.Show();
+        }
+
+        private void thôngTinHàngTồnKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MuaHangPanel.Controls.Clear();
+            DataGridView dataGridView = new DataGridView();
+            dataGridView.Dock = DockStyle.Fill;
+            dataGridView.BackgroundColor = Color.LemonChiffon;
+            MuaHangPanel.Controls.Add(dataGridView);
+            dataGridView.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM Goods");
         }
     }
 }

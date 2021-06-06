@@ -58,6 +58,20 @@ namespace QuanLySieuThi
                     f.ShowDialog();
                     this.Show();
                 }
+                else if(AccountDAO.Instance.CheckLogin(usename, password) == "Kiểm Toán Viên")
+                {
+                    KiemToanVien f = new KiemToanVien();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }
+                else if (AccountDAO.Instance.CheckLogin(usename, password) == "Quản Lý Quầy")
+                {
+                    QuanLyQuay f = new QuanLyQuay();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }
                 else
                 {
                     MessageBox.Show("Tên đăng nhập hoặc mật khẩu sai...");

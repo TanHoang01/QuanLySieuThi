@@ -140,22 +140,41 @@ namespace QuanLySieuThi.DAO
                 {
                     connection.Open();
                     SqlCommand command = new SqlCommand("UPDATE Goods SET SoLuong = SoLuong - '" + b + "' WHERE MaHangHoa =  '" + a + "'", connection);
-                    int c = command.ExecuteNonQuery();
+                    command.ExecuteNonQuery();
                     connection.Close();
-                    if (c == 0)
-                    {
-                        MessageBox.Show("Mă Hàng Không Đúng!", "Thông Báo", MessageBoxButtons.OK);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Thêm Hàng Hóa Thành Công!", "Thông Báo", MessageBoxButtons.OK);
-                    }
+                    
                 }
                 catch
                 {
-                    MessageBox.Show("Mă Hàng Không Đúng!", "Thông Báo", MessageBoxButtons.OK);
+                    MessageBox.Show("Lỗi!", "Thông Báo", MessageBoxButtons.OK);
                 }
             }
+        }
+        public void FakeIssueGoods(FakeIssue fakeIssue)
+        {
+
+            using (SqlConnection connection = new SqlConnection(connectionSTR))
+            {
+                try
+                {
+                    connection.Open();
+                    SqlCommand command = new SqlCommand("INSERT INTO FakeIssue VALUES (@ID,@MaHangHoa,@TenHang,@DonVi,@SoLuong,@DonGia,@GhiChu)", connection);
+                    command.Parameters.AddWithValue("@ID", fakeIssue.ID);
+                    command.Parameters.AddWithValue("@MaHangHoa", fakeIssue.MaHangHoa);
+                    command.Parameters.AddWithValue("@TenHang", fakeIssue.TenHang);
+                    command.Parameters.AddWithValue("@DonVi", fakeIssue.DonVi);
+                    command.Parameters.AddWithValue("@SoLuong", fakeIssue.SoLuong);
+                    command.Parameters.AddWithValue("@DonGia", fakeIssue.DonGia);
+                    command.Parameters.AddWithValue("@GhiChu", fakeIssue.GhiChu);
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                }
+                catch
+                {
+                    MessageBox.Show("Lỗi!", "Thông Báo", MessageBoxButtons.OK);
+                }
+            }
+
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XoaTaiKhoan));
             this.DeleteDGV = new System.Windows.Forms.DataGridView();
             this.btXoaTK = new System.Windows.Forms.Button();
             this.btHuyXoa = new System.Windows.Forms.Button();
@@ -36,6 +37,7 @@
             // 
             // DeleteDGV
             // 
+            this.DeleteDGV.BackgroundColor = System.Drawing.Color.LemonChiffon;
             this.DeleteDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DeleteDGV.Location = new System.Drawing.Point(12, 12);
             this.DeleteDGV.Name = "DeleteDGV";
@@ -47,28 +49,33 @@
             // 
             // btXoaTK
             // 
+            this.btXoaTK.BackColor = System.Drawing.Color.Orange;
+            this.btXoaTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btXoaTK.Location = new System.Drawing.Point(479, 385);
             this.btXoaTK.Name = "btXoaTK";
             this.btXoaTK.Size = new System.Drawing.Size(134, 53);
             this.btXoaTK.TabIndex = 1;
             this.btXoaTK.Text = "Xóa";
-            this.btXoaTK.UseVisualStyleBackColor = true;
+            this.btXoaTK.UseVisualStyleBackColor = false;
             this.btXoaTK.Click += new System.EventHandler(this.btXoaTK_Click);
             // 
             // btHuyXoa
             // 
+            this.btHuyXoa.BackColor = System.Drawing.Color.Orange;
+            this.btHuyXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btHuyXoa.Location = new System.Drawing.Point(654, 385);
             this.btHuyXoa.Name = "btHuyXoa";
             this.btHuyXoa.Size = new System.Drawing.Size(134, 53);
             this.btHuyXoa.TabIndex = 2;
             this.btHuyXoa.Text = "Hủy";
-            this.btHuyXoa.UseVisualStyleBackColor = true;
+            this.btHuyXoa.UseVisualStyleBackColor = false;
             this.btHuyXoa.Click += new System.EventHandler(this.btHuyXoa_Click);
             // 
             // XoaTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btHuyXoa);
             this.Controls.Add(this.btXoaTK);

@@ -73,3 +73,17 @@ D:\QuanLySieuThi\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 D:\QuanLySieuThi\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 D:\QuanLySieuThi\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 D:\QuanLySieuThi\obj\Debug\QuanLySieuThi.csprojAssemblyReference.cache
+D:\QuanLySieuThi\obj\Debug\QuanLySieuThi.ThuNgan.resources
+D:\QuanLySieuThi\obj\Debug\QuanLySieuThi.BillReport.PrintBill.resources
+D:\QuanLySieuThi\obj\Debug\RdlCompile.cache
+D:\QuanLySieuThi\obj\Debug\RdlCompile.compiled
+D:\QuanLySieuThi\obj\Debug\QuanLySieuThi.RI.RIPrint.resources
+D:\QuanLySieuThi\obj\Debug\QuanLySieuThi.IssueReport.SendI.resources
+D:\QuanLySieuThi\obj\Debug\QuanLySieuThi.KiemToanVien.resources
+D:\QuanLySieuThi\obj\Debug\QuanLySieuThi.IncomeForm.resources
+D:\QuanLySieuThi\obj\Debug\QuanLySieuThi.IncomeReport.PrintIncome.resources
+D:\QuanLySieuThi\obj\Debug\QuanLySieuThi.DeNghiXuatHang.resources
+D:\QuanLySieuThi\obj\Debug\QuanLySieuThi.QuanLyQuay.resources
+D:\QuanLySieuThi\obj\Debug\QuanLySieuThi.IssueReport.Request.resources
+D:\QuanLySieuThi\obj\Debug\QuanLySieuThi.GiaoCa.GiaoCaReport.resources
+D:\QuanLySieuThi\obj\Debug\QuanLySieuThi.GiaoCaForm.resources

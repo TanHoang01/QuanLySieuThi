@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemHangCu));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txbThemHangCu = new System.Windows.Forms.TextBox();
@@ -49,18 +50,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(83, 57);
+            this.label1.BackColor = System.Drawing.Color.Gold;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(43, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 17);
+            this.label1.Size = new System.Drawing.Size(175, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Hàng Cần Thêm";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(83, 306);
+            this.label2.BackColor = System.Drawing.Color.Gold;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(78, 303);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 17);
+            this.label2.Size = new System.Drawing.Size(140, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Số Lượng Thêm";
             // 
@@ -82,6 +87,7 @@
             // lbTime2
             // 
             this.lbTime2.AutoSize = true;
+            this.lbTime2.BackColor = System.Drawing.Color.Gold;
             this.lbTime2.Location = new System.Drawing.Point(598, 31);
             this.lbTime2.Name = "lbTime2";
             this.lbTime2.Size = new System.Drawing.Size(20, 17);
@@ -90,22 +96,26 @@
             // 
             // btThemHangCu
             // 
+            this.btThemHangCu.BackColor = System.Drawing.Color.Orange;
+            this.btThemHangCu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btThemHangCu.Location = new System.Drawing.Point(450, 378);
             this.btThemHangCu.Name = "btThemHangCu";
             this.btThemHangCu.Size = new System.Drawing.Size(98, 42);
             this.btThemHangCu.TabIndex = 5;
             this.btThemHangCu.Text = "Thêm";
-            this.btThemHangCu.UseVisualStyleBackColor = true;
+            this.btThemHangCu.UseVisualStyleBackColor = false;
             this.btThemHangCu.Click += new System.EventHandler(this.btThemHangCu_Click);
             // 
             // btHuyThemHangCu
             // 
+            this.btHuyThemHangCu.BackColor = System.Drawing.Color.Orange;
+            this.btHuyThemHangCu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btHuyThemHangCu.Location = new System.Drawing.Point(615, 378);
             this.btHuyThemHangCu.Name = "btHuyThemHangCu";
             this.btHuyThemHangCu.Size = new System.Drawing.Size(98, 42);
             this.btHuyThemHangCu.TabIndex = 6;
             this.btHuyThemHangCu.Text = "Hủy";
-            this.btHuyThemHangCu.UseVisualStyleBackColor = true;
+            this.btHuyThemHangCu.UseVisualStyleBackColor = false;
             this.btHuyThemHangCu.Click += new System.EventHandler(this.btHuyThemHangCu_Click);
             // 
             // lbTH
@@ -137,6 +147,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.LemonChiffon;
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.lbTH);
             this.panel1.Controls.Add(this.label4);
@@ -178,9 +189,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(83, 175);
+            this.label6.BackColor = System.Drawing.Color.Gold;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(68, 172);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 17);
+            this.label6.Size = new System.Drawing.Size(150, 20);
             this.label6.TabIndex = 11;
             this.label6.Text = "Mô Tả Thông Tin";
             // 
@@ -188,6 +201,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel1);

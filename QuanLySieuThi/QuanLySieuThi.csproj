@@ -71,6 +71,17 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="BillReport\DataSetBill.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetBill.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BillReport\PrintBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillReport\PrintBill.Designer.cs">
+      <DependentUpon>PrintBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="BoPhanMuaHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,9 +89,17 @@
       <DependentUpon>BoPhanMuaHang.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\BillDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\GCDAO.cs" />
     <Compile Include="DAO\GoodsDAO.cs" />
-    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="DAO\RIReportDAO.cs" />
+    <Compile Include="DeNghiXuatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeNghiXuatHang.Designer.cs">
+      <DependentUpon>DeNghiXuatHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="DoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,10 +107,77 @@
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="DTO\Account.cs" />
+    <Compile Include="DTO\Detail.cs" />
+    <Compile Include="DTO\FakeIssue.cs" />
+    <Compile Include="DTO\GiaoC.cs" />
     <Compile Include="DTO\Goods.cs" />
+    <Compile Include="DTO\Income.cs" />
     <Compile Include="DTO\Issue.cs" />
+    <Compile Include="DTO\Master.cs" />
     <Compile Include="DTO\Receipt.cs" />
     <Compile Include="DTO\RIReport.cs" />
+    <Compile Include="GiaoCaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoCaForm.Designer.cs">
+      <DependentUpon>GiaoCaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoCa\DataSetGiaoCa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetGiaoCa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoCa\GiaoCaReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoCa\GiaoCaReport.Designer.cs">
+      <DependentUpon>GiaoCaReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeForm.Designer.cs">
+      <DependentUpon>IncomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeReport\DataSetIncome.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetIncome.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeReport\PrintIncome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeReport\PrintIncome.Designer.cs">
+      <DependentUpon>PrintIncome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IssueReport\DataSetRequest.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetRequest.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IssueReport\DataSetSendI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSendI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IssueReport\Request.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueReport\Request.Designer.cs">
+      <DependentUpon>Request.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IssueReport\SendI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueReport\SendI.Designer.cs">
+      <DependentUpon>SendI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KiemToanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KiemToanVien.Designer.cs">
+      <DependentUpon>KiemToanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,11 +186,28 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyQuay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyQuay.Designer.cs">
+      <DependentUpon>QuanLyQuay.cs</DependentUpon>
+    </Compile>
     <Compile Include="RIForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RIForm.Designer.cs">
       <DependentUpon>RIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RI\DataSetRI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetRI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RI\RIPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RI\RIPrint.Designer.cs">
+      <DependentUpon>RIPrint.cs</DependentUpon>
     </Compile>
     <Compile Include="ThemHangCu.cs">
       <SubType>Form</SubType>
@@ -151,11 +254,43 @@
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BillReport\BillReport.rdlc" />
+    <EmbeddedResource Include="BillReport\PrintBill.resx">
+      <DependentUpon>PrintBill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BoPhanMuaHang.resx">
       <DependentUpon>BoPhanMuaHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DeNghiXuatHang.resx">
+      <DependentUpon>DeNghiXuatHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DoiMatKhau.resx">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoCaForm.resx">
+      <DependentUpon>GiaoCaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoCa\GiaoCaReport.resx">
+      <DependentUpon>GiaoCaReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoCa\ReportGiaoCa.rdlc" />
+    <EmbeddedResource Include="IncomeForm.resx">
+      <DependentUpon>IncomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeReport\IncomeReport.rdlc" />
+    <EmbeddedResource Include="IncomeReport\PrintIncome.resx">
+      <DependentUpon>PrintIncome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueReport\Request.resx">
+      <DependentUpon>Request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueReport\RequestReport.rdlc" />
+    <EmbeddedResource Include="IssueReport\SendI.resx">
+      <DependentUpon>SendI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueReport\SendReport.rdlc" />
+    <EmbeddedResource Include="KiemToanVien.resx">
+      <DependentUpon>KiemToanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginScreen.resx">
       <DependentUpon>LoginScreen.cs</DependentUpon>
@@ -169,8 +304,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QuanLyQuay.resx">
+      <DependentUpon>QuanLyQuay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RIForm.resx">
       <DependentUpon>RIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RI\RI.rdlc" />
+    <EmbeddedResource Include="RI\RIPrint.resx">
+      <DependentUpon>RIPrint.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemHangCu.resx">
       <DependentUpon>ThemHangCu.cs</DependentUpon>
@@ -184,14 +326,80 @@
     <EmbeddedResource Include="ThuKho.resx">
       <DependentUpon>ThuKho.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ThuNgan.resx">
+      <DependentUpon>ThuNgan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="XoaTaiKhoan.resx">
       <DependentUpon>XoaTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XuatHang.resx">
       <DependentUpon>XuatHang.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="BillReport\DataSetBill.xsc">
+      <DependentUpon>DataSetBill.xsd</DependentUpon>
+    </None>
+    <None Include="BillReport\DataSetBill.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetBill.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BillReport\DataSetBill.xss">
+      <DependentUpon>DataSetBill.xsd</DependentUpon>
+    </None>
+    <None Include="GiaoCa\DataSetGiaoCa.xsc">
+      <DependentUpon>DataSetGiaoCa.xsd</DependentUpon>
+    </None>
+    <None Include="GiaoCa\DataSetGiaoCa.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetGiaoCa.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="GiaoCa\DataSetGiaoCa.xss">
+      <DependentUpon>DataSetGiaoCa.xsd</DependentUpon>
+    </None>
+    <None Include="IncomeReport\DataSetIncome.xsc">
+      <DependentUpon>DataSetIncome.xsd</DependentUpon>
+    </None>
+    <None Include="IncomeReport\DataSetIncome.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetIncome.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="IncomeReport\DataSetIncome.xss">
+      <DependentUpon>DataSetIncome.xsd</DependentUpon>
+    </None>
+    <None Include="IssueReport\DataSetRequest.xsc">
+      <DependentUpon>DataSetRequest.xsd</DependentUpon>
+    </None>
+    <None Include="IssueReport\DataSetRequest.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetRequest.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="IssueReport\DataSetRequest.xss">
+      <DependentUpon>DataSetRequest.xsd</DependentUpon>
+    </None>
+    <None Include="IssueReport\DataSetSendI.xsc">
+      <DependentUpon>DataSetSendI.xsd</DependentUpon>
+    </None>
+    <None Include="IssueReport\DataSetSendI.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSendI.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="IssueReport\DataSetSendI.xss">
+      <DependentUpon>DataSetSendI.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\QuanLySieuThi.BillReport.BillDataSet.datasource" />
+    <None Include="Properties\DataSources\QuanLySieuThi.BillReport.DataSet1.datasource" />
+    <None Include="Properties\DataSources\QuanLySieuThi.BillReport.DataSetBill.datasource" />
     <None Include="Properties\DataSources\QuanLySieuThi.DTO.RIReport.datasource" />
+    <None Include="Properties\DataSources\QuanLySieuThi.GiaoCa.DataSetGiaoCa.datasource" />
+    <None Include="Properties\DataSources\QuanLySieuThi.IncomeReport.DataSetIncome.datasource" />
+    <None Include="Properties\DataSources\QuanLySieuThi.IssueReport.DataSetRequest.datasource" />
+    <None Include="Properties\DataSources\QuanLySieuThi.IssueReport.DataSetSendI.datasource" />
+    <None Include="Properties\DataSources\QuanLySieuThi.RI.DataSetRI.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -201,6 +409,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="RI\DataSetRI.xsc">
+      <DependentUpon>DataSetRI.xsd</DependentUpon>
+    </None>
+    <None Include="RI\DataSetRI.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetRI.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RI\DataSetRI.xss">
+      <DependentUpon>DataSetRI.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

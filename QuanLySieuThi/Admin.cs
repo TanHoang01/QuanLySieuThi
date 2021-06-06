@@ -39,6 +39,7 @@ namespace QuanLySieuThi
             AdminPanel.Controls.Clear();
             DataGridView dataGridView = new DataGridView();
             dataGridView.Dock = DockStyle.Fill;
+            dataGridView.BackgroundColor = Color.LemonChiffon;
             AdminPanel.Controls.Add(dataGridView);
             dataGridView.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM Account");
         }
@@ -48,6 +49,7 @@ namespace QuanLySieuThi
             AdminPanel.Controls.Clear();
             DataGridView dataGridView = new DataGridView();
             dataGridView.Dock = DockStyle.Fill;
+            dataGridView.BackgroundColor = Color.LemonChiffon;
             AdminPanel.Controls.Add(dataGridView);
             dataGridView.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM Goods");
         }
