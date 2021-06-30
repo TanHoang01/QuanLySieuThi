@@ -76,7 +76,7 @@ namespace QuanLySieuThi.DAO
                     }
                     else
                     {
-                        MessageBox.Show("Thêm Tài Khoản Thành Công!", "Thông Báo", MessageBoxButtons.OK);
+                        MessageBox.Show("Tài Khoản Admin Đã Được Cập Nhật!", "Thông Báo", MessageBoxButtons.OK);
                     }
                 }
                 catch
