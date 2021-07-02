@@ -23,7 +23,7 @@ namespace QuanLySieuThi
 
         private void txbMHtn_TextChanged(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-6BKORA6;Initial Catalog=QuanLySieuThi;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-0U67BQC\\XUANDINH;Initial Catalog=SupermarketManagement;Integrated Security=True");
             connection.Open();
             if (txbMHtn.Text != null)
             {
@@ -174,7 +174,7 @@ namespace QuanLySieuThi
             string stmt = "SELECT COUNT(*) FROM dbo.Master";
             int count = 0;
 
-            using (SqlConnection thisConnection = new SqlConnection("Data Source=DESKTOP-6BKORA6;Initial Catalog=QuanLySieuThi;Integrated Security=True"))
+            using (SqlConnection thisConnection = new SqlConnection("Data Source=DESKTOP-0U67BQC\\XUANDINH;Initial Catalog=SupermarketManagement;Integrated Security=True"))
             {
                 using (SqlCommand cmdCount = new SqlCommand(stmt, thisConnection))
                 {

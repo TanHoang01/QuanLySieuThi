@@ -8,17 +8,19 @@ using System.Data.SqlClient;
 
 namespace QuanLySieuThi.DAO
 {
-    class DataProvider
+    public class DataProvider
     {
         private static DataProvider instance;
+        public string connectionSTR = "Data Source=.\\XUANDINH;Initial Catalog=SupermarketManagement;Integrated Security=True";
+
+        public DataProvider() { }
 
         public static DataProvider Instance
         {
-            get { if (instance == null) instance = new DataProvider(); return DataProvider.instance; }
+            get { if (instance == null) instance = new DataProvider(); return instance; }
             private set { DataProvider.instance = value; }
-        }
+        }        
 
-        public string connectionSTR = "Data Source=DESKTOP-6BKORA6;Initial Catalog=QuanLySieuThi;Integrated Security=True";
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();
@@ -48,9 +50,11 @@ namespace QuanLySieuThi.DAO
                 adapter.Fill(data);
 
                 connection.Close();
+
             }
             return data;
         }
+
         public int ExecuteNonQuery(string query, object[] parameter = null)
         {
             int data = 0;
@@ -81,6 +85,7 @@ namespace QuanLySieuThi.DAO
 
             return data;
         }
+
         public object ExecuteScalar(string query, object[] parameter = null)
         {
             object data = 0;
