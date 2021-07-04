@@ -20,7 +20,7 @@ namespace QuanLySieuThi.IssueReport
 
         private void SendI_Load(object sender, EventArgs e)
         {
-            string CNST = "Data Source=DESKTOP-6BKORA6;Initial Catalog=QuanLySieuThi;Integrated Security=True";
+            string CNST = "Data Source=.\\XUANDINH;Initial Catalog=SupermarketManagement;Integrated Security=True";
             SqlConnection connection = new SqlConnection(CNST);
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM FakeIssue ", connection);
             DataSetSendI bds = new DataSetSendI();
@@ -33,7 +33,7 @@ namespace QuanLySieuThi.IssueReport
 
         private void SendI_FormClosing(object sender, FormClosingEventArgs e)
         {
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-6BKORA6;Initial Catalog=QuanLySieuThi;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Data Source=.\\XUANDINH;Initial Catalog=SupermarketManagement;Integrated Security=True");
             connection.Open();
             SqlCommand command = new SqlCommand("DELETE FROM FakeIssue", connection);
             command.ExecuteNonQuery();

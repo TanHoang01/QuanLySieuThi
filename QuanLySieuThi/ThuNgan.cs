@@ -171,17 +171,10 @@ namespace QuanLySieuThi
         }
         public int RowCount()
         {
-            string stmt = "SELECT COUNT(*) FROM dbo.Master";
-            int count = 0;
+            string query = "SELECT COUNT(*) FROM dbo.Master";
 
-            using (SqlConnection thisConnection = new SqlConnection("Data Source=DESKTOP-0U67BQC\\XUANDINH;Initial Catalog=SupermarketManagement;Integrated Security=True"))
-            {
-                using (SqlCommand cmdCount = new SqlCommand(stmt, thisConnection))
-                {
-                    thisConnection.Open();
-                    count = (int)cmdCount.ExecuteScalar();
-                }
-            }
+            int count = (int)DataProvider.Instance.ExecuteScalar(query);
+
             return count;
         }
 

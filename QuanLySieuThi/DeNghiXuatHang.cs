@@ -76,7 +76,7 @@ namespace QuanLySieuThi
 
         private void txbmhh_TextChanged(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-6BKORA6;Initial Catalog=QuanLySieuThi;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Data Source=.\\XUANDINH;Initial Catalog=SupermarketManagement;Integrated Security=True");
             connection.Open();
             if (txbmhh.Text != null)
             {

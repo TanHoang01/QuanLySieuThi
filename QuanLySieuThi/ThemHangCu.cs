@@ -51,9 +51,10 @@ namespace QuanLySieuThi
             this.Close();
         }
 
+        //Data Source=.\\XUANDINH;Initial Catalog=SupermarketManagement;Integrated Security=True
         private void txbThemHangCu_TextChanged(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-6BKORA6;Initial Catalog=QuanLySieuThi;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Data Source=.\\XUANDINH;Initial Catalog=SupermarketManagement;Integrated Security=True");
             connection.Open();
             if (txbThemHangCu.Text != null)
             {

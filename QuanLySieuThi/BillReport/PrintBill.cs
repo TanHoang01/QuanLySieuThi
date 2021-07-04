@@ -22,10 +22,14 @@ namespace QuanLySieuThi.BillReport
         private void PrintBill_Load(object sender, EventArgs e)
         {
             lbhds.Text = RowCount().ToString();
-            string CNST = "Data Source=DESKTOP-6BKORA6;Initial Catalog=QuanLySieuThi;Integrated Security=True";
+
+            string CNST = "Data Source=.\\XUANDINH;Initial Catalog=SupermarketManagement;Integrated Security=True";
             SqlConnection connection = new SqlConnection(CNST);
+
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM VIEWALLBILL WHERE InID = '" + lbhds.Text + "' ", connection);
+            
             DataSetBill bds = new DataSetBill();
+
             da.Fill(bds, "DataTableBill");
             ReportDataSource dtr = new ReportDataSource("DataSet_Bill", bds.Tables[0]);
             this.reportViewer1.LocalReport.DataSources.Clear();
@@ -35,17 +39,10 @@ namespace QuanLySieuThi.BillReport
 
         public int RowCount()
         {
-            string stmt = "SELECT COUNT(*) FROM dbo.Master";
-            int count = 0;
+            string query = "SELECT COUNT(*) FROM dbo.Master";
 
-            using (SqlConnection thisConnection = new SqlConnection("Data Source=DESKTOP-6BKORA6;Initial Catalog=QuanLySieuThi;Integrated Security=True"))
-            {
-                using (SqlCommand cmdCount = new SqlCommand(stmt, thisConnection))
-                {
-                    thisConnection.Open();
-                    count = (int)cmdCount.ExecuteScalar();
-                }
-            }
+            int count = (int)DAO.DataProvider.Instance.ExecuteScalar(query);
+
             return count;
         }
     }

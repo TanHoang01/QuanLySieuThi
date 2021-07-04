@@ -62,7 +62,7 @@ namespace QuanLySieuThi
 
         private void txbMHX_TextChanged(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-6BKORA6;Initial Catalog=QuanLySieuThi;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Data Source=.\\XUANDINH;Initial Catalog=SupermarketManagement;Integrated Security=True");
             connection.Open();
             if (txbMHX.Text != null)
             {
@@ -71,7 +71,6 @@ namespace QuanLySieuThi
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-
                     lbTHX.Text = reader.GetValue(0).ToString();
                     lbDVX.Text = reader.GetValue(1).ToString();
                     lbDGX.Text = reader.GetValue(2).ToString();
